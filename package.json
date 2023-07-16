@@ -1,0 +1,24 @@
+{
+  "name": "jez_salad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICrossfadE/Jez_Salad.git"
+  },
+  "author": "CrossfadE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICrossfadE/Jez_Salad/issues"
+  },
+  "homepage": "https://github.com/ICrossfadE/Jez_Salad#readme",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2"
+  }
+}
