@@ -34,6 +34,8 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.64.2",
-    "webp-converter": "^2.2.3"
+    "webp-converter": "^2.2.3",
+    "webpack": "^5.88.2",
+    "webpack-stream": "^7.0.0"
   }
 }
