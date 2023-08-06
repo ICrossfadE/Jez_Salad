@@ -1,11 +1,13 @@
-import replace from "gulp-replace";
-import gulpPlumber from "gulp-plumber";
-import notify from "gulp-notify";
-import browserSync from "browser-sync";
+import replace from "gulp-replace"; // Пошук та заміна
+import gulpPlumber from "gulp-plumber"; // Обробка помилок
+import notify from "gulp-notify"; // Сповіщення(помилки)
+import browserSync from "browser-sync"; // Локальний сервер
+import newer from "gulp-newer"; // Провірка оновлень
 
 export const plugins = {
   replace: replace,
   plumber: gulpPlumber,
   notify: notify,
   browserSync: browserSync,
+  newer: newer,
 };

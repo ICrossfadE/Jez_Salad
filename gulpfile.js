@@ -1,8 +1,8 @@
-//main module
+// Головний модуль / Main module
 import gulp from "gulp";
-//import paths
+// Імпорт шляхів / Import paths
 import { path } from "./gulp/configs/path.js";
-//import basic plugins
+// Імпорт основних плагінів / Import basic plugins
 import { plugins } from "./gulp/configs/plugins.js";
 
 //We pass the value to the global variable
@@ -12,25 +12,29 @@ global.app = {
   plugins: plugins,
 };
 
-// import Tasks
+// Імпорт зачач / Import Tasks
 import { copy } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
-import { scriptJS } from "./gulp/tasks/js.js";
+import { js } from "./gulp/tasks/js.js";
+import { images } from "./gulp/tasks/images.js";
 
-//watcher
+// Наглядач / Watcher
 function watcher() {
   gulp.watch(path.watch.files, copy);
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
-  gulp.watch(path.watch.js, scriptJS);
+  gulp.watch(path.watch.js, js);
+  gulp.watch(path.watch.images, images);
 }
 
-const mainTasks = gulp.parallel(copy, scriptJS, html, scss);
+// Основні задачі / Main tasks
+const mainTasks = gulp.parallel(copy, html, scss, js, images);
 
+//Серія задач / Series tasks
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
-//Run scenario
+// Запуск сценарію // Run scenario
 gulp.task("default", dev);
