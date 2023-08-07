@@ -12,7 +12,7 @@ const sass = gulpSass(dartSass);
 export const scss = () => {
   return (
     app.gulp
-      .src(app.path.src.scss, { sourcemaps: true })
+      .src(app.path.src.scss, { sourcemaps: app.isDev })
       .pipe(
         app.plugins.plumber(
           app.plugins.notify.onError({
@@ -27,23 +27,29 @@ export const scss = () => {
           outputStyle: "expanded",
         })
       )
-      .pipe(groupCssMediaQueries())
+      .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
       .pipe(
-        webpcss({
-          webpClass: ".webp",
-          noWebpClass: ".no-webp",
-        })
+        app.plugins.if(
+          app.isBuild,
+          webpcss({
+            webpClass: ".webp",
+            noWebpClass: ".no-webp",
+          })
+        )
       )
       .pipe(
-        autoPrefixer({
-          grid: true,
-          overrideBrowserslist: ["last 3 versions"],
-          cascade: true,
-        })
+        app.plugins.if(
+          app.isBuild,
+          autoPrefixer({
+            grid: true,
+            overrideBrowserslist: ["last 3 versions"],
+            cascade: true,
+          })
+        )
       )
       //uncomment if uncompressed file CSS
       .pipe(app.gulp.dest(app.path.build.css))
-      .pipe(cleanCss())
+      .pipe(app.plugins.if(app.isBuild, cleanCss()))
       .pipe(
         rename({
           extname: ".min.css",
