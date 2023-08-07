@@ -1,6 +1,85 @@
+@import "reset.scss";
+@import "list.scss";
+
+[class*="__container"] {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 body {
-  background-color: chocolate;
-  span {
-    color: red;
+  font-family: "Poppins", sans-serif;
+  background-color: $bg-main;
+}
+
+.header__container {
+  padding-top: 30px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    cursor: pointer;
+
+    .header-logo {
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: $grayMedium;
+
+      span {
+        font-weight: 900;
+      }
+    }
+
+    ul {
+      display: flex;
+      color: $grayThin;
+      gap: 56px;
+
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%; /* 20.8px */
+        white-space: nowrap;
+        width: 100%;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $mainColor;
+          // font-weight: 700;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .header-buttom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 54px;
+      padding: 24px 32px;
+      border-radius: 100px;
+      background-color: $mainColor;
+      cursor: pointer;
+      gap: 16px;
+
+      font-family: Poppins;
+      color: $bg-main;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 20.8px */
+    }
   }
 }
+
+.header-logo {
+  span {
+    color: $mainColor;
+  }
+}
+
+@import "media.scss";
