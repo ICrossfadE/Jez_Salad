@@ -58,6 +58,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 130%; /* 20.8px */
+  user-select: none;
   transition: all 0.2s ease;
 }
 .header__container nav .navbar li:hover {
@@ -80,6 +81,7 @@ body {
   background-color: #fb9333;
   cursor: pointer;
   gap: 16px;
+  user-select: none;
   transition: all 0.5s ease;
   font-family: Poppins;
   color: #ffffff;
@@ -106,11 +108,13 @@ body {
   width: 54px;
   border-radius: 100px;
   z-index: 10;
+  user-select: none;
   transition: all 0.5s ease;
 }
 
 @media (max-width: 768px) {
   .header__container nav {
+    user-select: none;
     transition: all 0.5s ease;
     gap: 1px;
   }
@@ -136,6 +140,7 @@ body {
     height: 44px;
     font-size: 12px;
     transition: all 0.5s ease;
+    z-index: 10;
   }
   .header__container nav .header-buttons #menu-icon {
     display: block;

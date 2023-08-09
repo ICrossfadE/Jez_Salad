@@ -57,6 +57,7 @@ body {
         font-size: 16px;
         font-weight: 500;
         line-height: 130%; /* 20.8px */
+        user-select: none;
         transition: all 0.2s ease;
 
         &:hover {
@@ -83,6 +84,7 @@ body {
         background-color: $mainColor;
         cursor: pointer;
         gap: 16px;
+        user-select: none;
         transition: all 0.5s ease;
 
         font-family: Poppins;
@@ -111,6 +113,7 @@ body {
         width: 54px;
         border-radius: 100px;
         z-index: 10;
+        user-select: none;
         transition: all 0.5s ease;
       }
     }

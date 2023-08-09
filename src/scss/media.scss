@@ -1,8 +1,10 @@
 @media (max-width: 768px) {
   .header__container {
     nav {
+      user-select: none;
       transition: all 0.5s ease;
       gap: 1px;
+
       .navbar {
         display: flex;
         flex-direction: column;
@@ -29,6 +31,7 @@
           height: 44px;
           font-size: 12px;
           transition: all 0.5s ease;
+          z-index: 10;
         }
         #menu-icon {
           display: block;
