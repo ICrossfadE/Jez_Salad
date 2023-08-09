@@ -1,15 +1,40 @@
 @media (max-width: 768px) {
   .header__container {
     nav {
-      ul {
-        display: none;
+      transition: all 0.5s ease;
+      gap: 1px;
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: -350px;
+        right: 10%;
+        width: 80%;
+        background-color: rgba(51, 51, 51, 0.5);
+        border-radius: 18px;
+        padding: 24px 0;
+        color: $bg-main;
+        transition: all 0.5s ease;
       }
+
+      .open {
+        top: 86px;
+      }
+
       .header-buttons {
         #user-login {
-          display: none;
+          // display: none;
+          width: 90px;
+          height: 44px;
+          font-size: 12px;
+          transition: all 0.5s ease;
         }
         #menu-icon {
           display: block;
+          height: 44px;
+          width: 44px;
+          transition: all 0.5s ease;
         }
       }
     }

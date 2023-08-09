@@ -35,6 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 54px;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 .header__container nav .header-logo {
@@ -42,24 +43,24 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #585858;
+  z-index: 10;
 }
 .header__container nav .header-logo span {
   font-weight: 900;
 }
-.header__container nav ul {
+.header__container nav .navbar {
   display: flex;
   color: #575757;
   gap: 56px;
+  transition: all 0.5s ease;
 }
-.header__container nav ul li {
+.header__container nav .navbar li {
   font-size: 16px;
   font-weight: 500;
   line-height: 130%; /* 20.8px */
-  white-space: nowrap;
-  width: 100%;
   transition: all 0.2s ease;
 }
-.header__container nav ul li:hover {
+.header__container nav .navbar li:hover {
   color: #fb9333;
   transition: all 0.2s ease;
 }
@@ -79,12 +80,17 @@ body {
   background-color: #fb9333;
   cursor: pointer;
   gap: 16px;
+  transition: all 0.5s ease;
   font-family: Poppins;
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 20.8px */
+}
+.header__container nav .header-buttons #user-login:hover {
+  background-color: #e27000;
+  transition: all 0.5s ease;
 }
 .header__container nav .header-buttons #menu-icon {
   display: none;
@@ -99,16 +105,42 @@ body {
   height: 54px;
   width: 54px;
   border-radius: 100px;
+  z-index: 10;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 768px) {
-  .header__container nav ul {
-    display: none;
+  .header__container nav {
+    transition: all 0.5s ease;
+    gap: 1px;
+  }
+  .header__container nav .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -350px;
+    right: 10%;
+    width: 80%;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 18px;
+    padding: 24px 0;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .header__container nav .open {
+    top: 86px;
   }
   .header__container nav .header-buttons #user-login {
-    display: none;
+    width: 90px;
+    height: 44px;
+    font-size: 12px;
+    transition: all 0.5s ease;
   }
   .header__container nav .header-buttons #menu-icon {
     display: block;
+    height: 44px;
+    width: 44px;
+    transition: all 0.5s ease;
   }
 }

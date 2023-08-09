@@ -32,6 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 54px;
+    transition: all 0.5s ease;
     cursor: pointer;
 
     .header-logo {
@@ -39,23 +40,23 @@ body {
       font-size: 24px;
       font-weight: 700;
       color: $grayMedium;
+      z-index: 10;
 
       span {
         font-weight: 900;
       }
     }
 
-    ul {
+    .navbar {
       display: flex;
       color: $grayThin;
       gap: 56px;
+      transition: all 0.5s ease;
 
       li {
         font-size: 16px;
         font-weight: 500;
         line-height: 130%; /* 20.8px */
-        white-space: nowrap;
-        width: 100%;
         transition: all 0.2s ease;
 
         &:hover {
@@ -82,6 +83,7 @@ body {
         background-color: $mainColor;
         cursor: pointer;
         gap: 16px;
+        transition: all 0.5s ease;
 
         font-family: Poppins;
         color: $bg-main;
@@ -89,6 +91,11 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: 130%; /* 20.8px */
+
+        &:hover {
+          background-color: $maincolor-hover;
+          transition: all 0.5s ease;
+        }
       }
       #menu-icon {
         display: none;
@@ -103,6 +110,8 @@ body {
         height: 54px;
         width: 54px;
         border-radius: 100px;
+        z-index: 10;
+        transition: all 0.5s ease;
       }
     }
   }
