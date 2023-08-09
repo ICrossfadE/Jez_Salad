@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .header__container {
+    nav {
+      ul {
+        display: none;
+      }
+      .header-buttons {
+        #user-login {
+          display: none;
+        }
+        #menu-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}

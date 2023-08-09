@@ -15,11 +15,20 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+  background-image: url("../img/backround/Ellipse 42.png"), url("../img/backround/Group 8438.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
 }
 
 .header__container {
   padding-top: 30px;
+  transition: all 0.2s ease;
+}
+.header__container .header-logo {
+  white-space: nowrap;
+}
+.header__container .header-logo span {
+  color: #fb9333;
 }
 .header__container nav {
   display: flex;
@@ -54,13 +63,18 @@ body {
   color: #fb9333;
   transition: all 0.2s ease;
 }
-.header__container nav .header-buttom {
+.header__container nav .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__container nav .header-buttons #user-login {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 130px;
   height: 54px;
-  padding: 24px 32px;
+  padding: 16px 32px;
   border-radius: 100px;
   background-color: #fb9333;
   cursor: pointer;
@@ -72,7 +86,29 @@ body {
   font-weight: 600;
   line-height: 130%; /* 20.8px */
 }
+.header__container nav .header-buttons #menu-icon {
+  display: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: #fb9333;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0;
+  height: 54px;
+  width: 54px;
+  border-radius: 100px;
+}
 
-.header-logo span {
-  color: #fb9333;
+@media (max-width: 768px) {
+  .header__container nav ul {
+    display: none;
+  }
+  .header__container nav .header-buttons #user-login {
+    display: none;
+  }
+  .header__container nav .header-buttons #menu-icon {
+    display: block;
+  }
 }

@@ -9,11 +9,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $bg-main;
+  background-image: url("@img/backround/Ellipse 42.png"),
+    url("@img/backround/Group 8438.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
 }
 
 .header__container {
   padding-top: 30px;
+  transition: all 0.2s ease;
+
+  .header-logo {
+    white-space: nowrap;
+
+    span {
+      color: $mainColor;
+    }
+  }
 
   nav {
     display: flex;
@@ -54,31 +66,45 @@ body {
       }
     }
 
-    .header-buttom {
+    .header-buttons {
       display: flex;
-      justify-content: center;
       align-items: center;
-      width: 130px;
-      height: 54px;
-      padding: 24px 32px;
-      border-radius: 100px;
-      background-color: $mainColor;
-      cursor: pointer;
-      gap: 16px;
+      gap: 10px;
 
-      font-family: Poppins;
-      color: $bg-main;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 20.8px */
+      #user-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 54px;
+        padding: 16px 32px;
+        border-radius: 100px;
+        background-color: $mainColor;
+        cursor: pointer;
+        gap: 16px;
+
+        font-family: Poppins;
+        color: $bg-main;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%; /* 20.8px */
+      }
+      #menu-icon {
+        display: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: $mainColor;
+        color: $bg-main;
+        font-size: 16px;
+        padding: 0;
+        height: 54px;
+        width: 54px;
+        border-radius: 100px;
+      }
     }
-  }
-}
-
-.header-logo {
-  span {
-    color: $mainColor;
   }
 }
 
