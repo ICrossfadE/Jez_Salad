@@ -8,7 +8,7 @@
 }
 
 [class*=__container] {
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -110,6 +110,98 @@ body {
   z-index: 10;
   user-select: none;
   transition: all 0.5s ease;
+}
+.header__container nav .header-buttons #menu-icon:hover {
+  background-color: #e27000;
+  transition: all 0.5s ease;
+}
+
+.header-block .header__container {
+  padding-top: 64px;
+  display: flex;
+  gap: 16px;
+}
+.header-block .header-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50.4273504274%;
+  gap: 30px;
+}
+.header-block .header-description .description-title {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  color: #fb9333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  border-radius: 100px;
+  background: #fff1de;
+}
+.header-block .header-description h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%; /* 93.6px */
+  letter-spacing: -1.44px;
+  color: #585858;
+}
+.header-block .header-description h1 span {
+  color: #fb9333;
+}
+.header-block .header-description p {
+  color: #828282;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  letter-spacing: -0.4px;
+}
+.header-block .header-description button {
+  display: flex;
+  width: 192px;
+  height: 68px;
+  padding: 24px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--fb-9333, #fb9333);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.header-block .header-description button:hover {
+  background-color: #e27000;
+  transition: all 0.5s ease;
+}
+.header-block .header-description .statistics {
+  margin-top: 88px;
+  display: flex;
+  gap: 52px;
+}
+.header-block .header-description .statistics div span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 160%; /* 38.4px */
+  color: #585858;
+}
+.header-block .header-description .statistics div p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  color: #828282;
+}
+.header-block .header-preview {
+  width: 47.8632478632%;
+}
+.header-block .header-preview .preview-picture img {
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
