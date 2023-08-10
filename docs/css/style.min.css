@@ -199,7 +199,7 @@ body {
 .header-block .header-preview {
   width: 47.8632478632%;
 }
-.header-block .header-preview .preview-picture img {
+.header-block .header-preview .preview-picture {
   position: relative;
   z-index: 10;
 }
