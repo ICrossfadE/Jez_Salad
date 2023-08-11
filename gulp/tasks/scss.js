@@ -48,7 +48,7 @@ export const scss = () => {
         )
       )
       //uncomment if uncompressed file CSS
-      .pipe(app.gulp.dest(app.path.build.css))
+      // .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.if(app.isBuild, cleanCss()))
       .pipe(
         rename({
