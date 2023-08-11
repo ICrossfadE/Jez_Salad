@@ -118,7 +118,7 @@
 
     .header-preview {
       display: none;
-      width: 160px / 1170px * 100%;
+      width: calc(160px / 1170px * 100%);
       .preview-picture {
         position: relative;
         z-index: -2;
@@ -128,4 +128,7 @@
 }
 
 @media (max-width: 425px) {
+  [class*="__container"] {
+    padding: 0 10px;
+  }
 }

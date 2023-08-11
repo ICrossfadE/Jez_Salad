@@ -291,3 +291,8 @@ body {
     z-index: -2;
   }
 }
+@media (max-width: 425px) {
+  [class*=__container] {
+    padding: 0 10px;
+  }
+}

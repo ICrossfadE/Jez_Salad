@@ -136,7 +136,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    max-width: 590px / 1170px * 100%;
+    max-width: calc(590px / 1170px * 100%);
     gap: 30px;
 
     .description-title {
@@ -224,7 +224,7 @@ body {
   }
 
   .header-preview {
-    width: 560px / 1170px * 100%;
+    width: calc(560px / 1170px * 100%);
     .preview-picture {
       position: relative;
       // left: 80px;
