@@ -8,9 +8,20 @@
 }
 
 [class*=__container] {
-  max-width: 1170px;
+  max-width: 1185px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+[class*=__title] {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 140%; /* 67.2px */
+  letter-spacing: -0.96px;
+  color: #585858;
+}
+[class*=__title] span {
+  color: #fb9333;
 }
 
 body {
@@ -203,6 +214,81 @@ body {
 .header-block .header-preview .preview-picture {
   position: relative;
   z-index: 5;
+}
+
+.task-block {
+  margin: 100px 0;
+}
+.task-block .task-block__container .task-block-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-block .task-block__container .task-block-title .task__title {
+  width: 586px;
+}
+.task-block .task-block__container .task-block-title p {
+  width: 480px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 36px */
+  letter-spacing: -0.4px;
+  color: #828282;
+}
+.task-block .task-block__container .tasks-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  gap: 40px;
+}
+.task-block .task-block__container .task-list-item {
+  padding: 30px;
+  border-radius: 50px;
+  border: 1px solid #fff1de;
+  background: #ffffff;
+}
+.task-block .task-block__container .task-list-item .item-logo {
+  height: 120px;
+}
+.task-block .task-block__container .task-list-item .item-title {
+  margin-top: 70px;
+  color: #2b2b2b;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 180%; /* 43.2px */
+  letter-spacing: -0.48px;
+}
+.task-block .task-block__container .task-list-item p {
+  margin-top: 12px;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  letter-spacing: -0.32px;
+}
+.task-block .task-block__container .task-list-item button {
+  position: relative;
+  margin-top: 24px;
+  color: #575757;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  letter-spacing: -0.32px;
+  background-color: transparent;
+  padding: 10px 44px 10px 10px;
+}
+.task-block .task-block__container .task-list-item button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+  stroke: #fb9333;
+  background: url("../img/svg-icon/Arrow - Right.svg");
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1440px) {
