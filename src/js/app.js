@@ -7,8 +7,6 @@ const headerMenuIcon = document.querySelector(".fa-bars");
 const navbar = document.querySelector(".navbar");
 const header = document.querySelector(".header__container");
 
-console.log(headerMenuIcon);
-
 headerMenu.addEventListener("click", (e) => {
   e.preventDefault();
   navbar.classList.toggle("open");
