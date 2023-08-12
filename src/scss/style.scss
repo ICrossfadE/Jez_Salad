@@ -276,9 +276,11 @@ body {
 
     .task-list-item {
       padding: 30px;
+      width: 363px;
       border-radius: 50px;
       border: 1px solid $bg-orange;
       background: $bg-main;
+      transition: all 0.2s ease;
 
       .item-logo {
         height: 120px;
@@ -296,13 +298,13 @@ body {
       p {
         margin-top: 12px;
         color: $grayThin;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 180%; /* 28.8px */
         letter-spacing: -0.32px;
       }
 
-      button {
+      .task-button {
         position: relative;
         margin-top: 24px;
         color: $grayThin;
@@ -311,19 +313,36 @@ body {
         line-height: 180%; /* 28.8px */
         letter-spacing: -0.32px;
         background-color: transparent;
-        padding: 10px 44px 10px 10px;
-        &::after {
-          content: "";
+        border-radius: 100px;
+        padding: 10px 44px 10px 24px;
+        transition: all 0.2s ease;
+        stroke: $grayThin;
+
+        svg {
           display: inline-block;
           position: absolute;
           top: 11px;
           margin-left: 10px;
-          height: 24px;
-          width: 24px;
-          stroke: #fb9333;
-          background: url("@img/svg-icon/Arrow - Right.svg");
-          background-repeat: no-repeat;
+          stroke: $grayThin;
         }
+
+        &:hover {
+          transition: all 0.2s ease;
+          color: $bg-main;
+          background-color: $mainColor;
+          stroke: $bg-main;
+          > svg {
+            &:hover {
+              transition: all 0.2s ease;
+              stroke: $bg-main;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.2);
+        transition: all 0.2s ease;
       }
     }
   }

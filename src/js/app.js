@@ -6,6 +6,13 @@ const headerMenu = document.querySelector("#menu-icon");
 const headerMenuIcon = document.querySelector(".fa-bars");
 const navbar = document.querySelector(".navbar");
 const header = document.querySelector(".header__container");
+// const taskButton = document.querySelectorAll(".task-button");
+
+// console.log(taskButton);
+
+// taskButton.addEventListener("mouseenter", (e) => {
+//   console.log("enter");
+// });
 
 headerMenu.addEventListener("click", (e) => {
   e.preventDefault();
