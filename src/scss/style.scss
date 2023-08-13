@@ -2,9 +2,21 @@
 @import "list.scss";
 
 [class*="__container"] {
-  max-width: 1170px;
+  max-width: 1185px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+[class*="__title"] {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 140%; /* 67.2px */
+  letter-spacing: -0.96px;
+  color: $grayMedium;
+
+  span {
+    color: $mainColor;
+  }
 }
 
 body {
@@ -227,13 +239,106 @@ body {
     width: calc(560px / 1170px * 100%);
     .preview-picture {
       position: relative;
-      // left: 80px;
-      // bottom: -82px;
-      // height: 100%;
-      // background: url("@img/Frame 21.png");
-      // background-repeat: no-repeat;
-      // background-size: contain;
       z-index: 5;
+    }
+  }
+}
+
+.task-block {
+  margin: 100px 0;
+  .task-block__container {
+    .task-block-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // gap: 134px;
+      .task__title {
+        width: 586px;
+      }
+
+      p {
+        width: 480px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%; /* 36px */
+        letter-spacing: -0.4px;
+        color: $grayLite;
+      }
+    }
+
+    .tasks-list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 64px;
+      gap: 40px;
+    }
+
+    .task-list-item {
+      padding: 30px;
+      width: 363px;
+      border-radius: 50px;
+      border: 1px solid $bg-orange;
+      background: $bg-main;
+      transition: all 0.2s ease;
+
+      .item-logo {
+        height: 120px;
+      }
+
+      .item-title {
+        margin-top: 70px;
+        color: $fontBlack;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 180%; /* 43.2px */
+        letter-spacing: -0.48px;
+      }
+
+      p {
+        margin-top: 12px;
+        color: $grayThin;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 180%; /* 28.8px */
+        letter-spacing: -0.32px;
+      }
+
+      button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        color: $grayThin;
+        white-space: nowrap;
+        user-select: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 180%; /* 28.8px */
+        letter-spacing: -0.32px;
+        background-color: transparent;
+        border-radius: 100px;
+        padding: 10px 44px 10px 24px;
+        transition: all 0.2s ease;
+        stroke: $grayThin;
+
+        i {
+          font-size: 24px;
+          padding-left: 10px;
+        }
+
+        &:hover {
+          transition: all 0.2s ease;
+          color: $bg-main;
+          background-color: $mainColor;
+          stroke: $bg-main;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.2);
+        transition: all 0.2s ease;
+      }
     }
   }
 }
