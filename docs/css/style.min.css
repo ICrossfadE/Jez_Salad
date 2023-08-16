@@ -575,6 +575,20 @@ body {
 }
 .social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-pagination {
   margin-top: 32px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 137.5% */
+  color: #ccc;
+}
+.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-pagination .swiper-pagination-current {
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 63.984px; /* 133.3% */
+  color: #333;
 }
 .social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-buttons {
   margin-top: 24px;
