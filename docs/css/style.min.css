@@ -551,29 +551,38 @@ body {
   background-color: #fff1de;
   overflow-x: hidden;
 }
+.social-block .social-block__container {
+  max-width: 100%;
+  padding: 0 15px;
+}
 .social-block .social-block__container .social-block-wrapper {
   margin: 120px 0;
   display: flex;
-  gap: 88px;
+  justify-content: space-between;
+  gap: 223px;
 }
 .social-block .social-block__container .social-block-wrapper .social-description {
+  margin-left: auto;
+  display: flex;
+}
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper {
   width: 400px;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .description__title {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .description__title {
   font-variant-numeric: lining-nums proportional-nums;
   font-size: 48px;
   font-weight: 600;
   line-height: 63.984px; /* 133.3% */
   color: #333;
 }
-.social-block .social-block__container .social-block-wrapper .social-description p {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper p {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
   color: #575757;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-pagination {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination {
   margin-top: 32px;
   font-family: Raleway;
   font-size: 16px;
@@ -582,7 +591,7 @@ body {
   line-height: 22px; /* 137.5% */
   color: #ccc;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-pagination .swiper-pagination-current {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination .swiper-pagination-current {
   font-family: Raleway;
   font-size: 48px;
   font-style: normal;
@@ -590,12 +599,12 @@ body {
   line-height: 63.984px; /* 133.3% */
   color: #333;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-buttons {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons {
   margin-top: 24px;
   display: flex;
   gap: 24px;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-buttons .swiper-button-prev {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,7 +615,7 @@ body {
   background-color: #fb9333;
   color: #ffffff;
 }
-.social-block .social-block__container .social-block-wrapper .social-description .swiper-navigation .swiper-buttons .swiper-button-next {
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-next {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -619,22 +628,16 @@ body {
 }
 
 .social-swipper {
-  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  width: 872px;
+  height: 482px;
+  padding-top: 45px;
   right: 0;
-  top: 1862px;
-  display: flex;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
-.social-swipper .social-wrapper {
-  top: 45px;
-  box-sizing: content-box;
-}
-.social-swipper .social-wrapper .social-slide {
-  display: flex;
+  top: -45px;
 }
 .social-swipper .social-wrapper .swiper-slide {
+  padding: 150px 24px 32px 24px;
   background-color: #ffffff;
   border-radius: 8px;
 }
@@ -656,12 +659,6 @@ body {
 .social-swipper .social-wrapper .swiper-slide:nth-child(6) .social-slide-content .avatar {
   background-image: url("../img/avatars/avatar-6.jpg");
 }
-.social-swipper .social-wrapper .swiper-slide .social-slide-content {
-  position: relative;
-  width: 270px;
-  padding: 202px 24px 32px 24px;
-  min-width: 0;
-}
 .social-swipper .social-wrapper .swiper-slide .social-slide-content .avatar {
   position: absolute;
   top: -45px;
@@ -682,6 +679,7 @@ body {
   color: #2b2b2b;
 }
 .social-swipper .social-wrapper .swiper-slide .social-slide-content .age {
+  margin: 8px 0 18px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 21px */

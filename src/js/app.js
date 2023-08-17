@@ -9,6 +9,9 @@ new Swiper(".swiper", {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
 
+  slidesPerView: 3,
+  spaceBetween: 30,
+
   //Aroows
   navigation: {
     nextEl: ".swiper-button-next",
@@ -19,31 +22,23 @@ new Swiper(".swiper", {
     type: "fraction",
   },
 
-  // simulateTouch: true,
-  slidesPerView: 3,
-
-  loop: true,
-
-  spaceBetween: 30,
-
   breakpoints: {
     1440: {
       slidesPerView: 3,
     },
-    768: {
-      slidesPerView: 2,
-    },
-    425: {
+    1024: {
       slidesPerView: 1,
     },
   },
 });
 
-//Header menu
+//Header
 const headerMenu = document.querySelector("#menu-icon");
 const headerMenuIcon = document.querySelector(".fa-bars");
 const navbar = document.querySelector(".navbar");
 const header = document.querySelector(".header__container");
+
+//SLider
 const currentClass = document.querySelector(".swiper-pagination-current");
 const totalClass = document.querySelector(".swiper-pagination-total");
 const buttonNext = document.querySelector(".swiper-button-next");
@@ -60,8 +55,19 @@ function renderFraction(current, total) {
   );
 }
 
+//First init
 renderFraction(currentClass, totalClass);
 
+buttonNext.addEventListener("click", (e) => {
+  e.preventDefault();
+  renderFraction(currentClass, totalClass);
+});
+buttonPrev.addEventListener("click", (e) => {
+  e.preventDefault();
+  renderFraction(currentClass, totalClass);
+});
+
+//Buurger menu
 headerMenu.addEventListener("click", (e) => {
   e.preventDefault();
   navbar.classList.toggle("open");
@@ -74,12 +80,4 @@ header.addEventListener("click", (e) => {
 });
 navbar.addEventListener("click", (e) => {
   e.preventDefault();
-});
-buttonNext.addEventListener("click", (e) => {
-  e.preventDefault();
-  renderFraction(currentClass, totalClass);
-});
-buttonPrev.addEventListener("click", (e) => {
-  e.preventDefault();
-  renderFraction(currentClass, totalClass);
 });

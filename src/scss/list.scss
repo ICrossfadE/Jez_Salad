@@ -10,3 +10,113 @@ $grayThin: #575757;
 //Bacround colors
 $bg-main: #ffffff;
 $bg-orange: #fff1de;
+
+// .social-swipper {
+//     position: absolute;
+//     right: 0;
+//     top: 1862px;
+//     // display: flex;
+//     width: 100%;
+//     max-width: 800px;
+//     height: auto;
+//     // overflow: visible;
+//     // overflow-x: hidden;
+
+//     .social-wrapper {
+//       display: inline-flex;
+//       top: 45px;
+//       box-sizing: content-box;
+
+//       .social-slide {
+//         // display: flex;
+//       }
+
+//       .swiper-slide {
+//         background-color: $bg-main;
+//         border-radius: 8px;
+//         &:nth-child(1) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-1.jpg");
+//             }
+//           }
+//         }
+//         &:nth-child(2) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-2.jpg");
+//             }
+//           }
+//         }
+//         &:nth-child(3) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-3.jpg");
+//             }
+//           }
+//         }
+//         &:nth-child(4) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-4.jpg");
+//             }
+//           }
+//         }
+//         &:nth-child(5) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-5.jpg");
+//             }
+//           }
+//         }
+//         &:nth-child(6) {
+//           .social-slide-content {
+//             .avatar {
+//               background-image: url("@img/avatars/avatar-6.jpg");
+//             }
+//           }
+//         }
+
+//         .social-slide-content {
+//           position: relative;
+//           width: 270px;
+//           padding: 202px 24px 32px 24px;
+//           min-width: 0;
+
+//           .avatar {
+//             position: absolute;
+//             top: -45px;
+//             max-width: 90px;
+//             max-height: 90px;
+//             height: 100%;
+//             width: 100%;
+//             border-radius: 8px;
+//             background-size: cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//           }
+
+//           .name {
+//             font-variant-numeric: lining-nums proportional-nums;
+//             font-size: 24px;
+//             font-weight: 500;
+//             line-height: 31.992px; /* 133.3% */
+//             color: $fontBlack;
+//           }
+//           .age {
+//             font-size: 14px;
+//             font-weight: 500;
+//             line-height: 150%; /* 21px */
+//             color: $grayLite;
+//           }
+//           .description {
+//             font-size: 16px;
+//             font-weight: 400;
+//             line-height: 150%; /* 24px */
+//             letter-spacing: -0.32px;
+//             color: $grayThin;
+//           }
+//         }
+//       }
+//     }
+//   }
