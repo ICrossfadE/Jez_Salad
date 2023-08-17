@@ -612,8 +612,13 @@ body {
   height: 54px;
   font-size: 24px;
   border-radius: 10px;
-  background-color: #fb9333;
+  background: #ffc87a;
   color: #ffffff;
+  transition: all 0.5s ease;
+}
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-prev:hover {
+  transition: all 0.5s ease;
+  background-color: #fb9333;
 }
 .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-next {
   display: flex;
@@ -623,8 +628,13 @@ body {
   height: 54px;
   font-size: 24px;
   border-radius: 10px;
-  background-color: #fb9333;
+  background: #ffc87a;
   color: #ffffff;
+  transition: all 0.5s ease;
+}
+.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-next:hover {
+  transition: all 0.5s ease;
+  background-color: #fb9333;
 }
 
 .social-swipper {
