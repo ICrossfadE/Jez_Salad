@@ -28,6 +28,8 @@ body {
   background-position-x: 100%;
 }
 
+// ===================HEADER========================================
+
 .header__container {
   padding-top: 30px;
   transition: all 0.2s ease;
@@ -245,6 +247,8 @@ body {
   }
 }
 
+// ===================TASKS========================================
+
 .task-block {
   margin: 100px 0;
   .task-block__container {
@@ -344,96 +348,92 @@ body {
   }
 }
 
+// ===================SOCIAL========================================
+
 .social-block {
   background-color: $bg-orange;
   overflow-x: hidden;
 
-  .social-block__container {
-    max-width: 100%;
-    padding: 0 15px;
+  .social-block-wrapper {
+    margin: 180px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    gap: clamp(0rem, -2.355rem + 8.87vw, 5.625rem);
 
-    .social-block-wrapper {
-      margin: 120px 0;
+    .social-description {
       display: flex;
-      justify-content: space-between;
-      gap: 223px;
+      .social-description-wrapper {
+        width: 400px;
 
-      .social-description {
-        margin-left: auto;
-        display: flex;
-        .social-description-wrapper {
-          width: 400px;
+        .description__title {
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 63.984px; /* 133.3% */
+          color: $grayStrong;
+        }
+        p {
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          color: $grayThin;
+        }
 
-          .description__title {
-            font-variant-numeric: lining-nums proportional-nums;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 63.984px; /* 133.3% */
-            color: $grayStrong;
-          }
-          p {
-            margin-top: 30px;
+        .swiper-navigation {
+          .swiper-pagination {
+            margin-top: 32px;
+            font-family: Raleway;
             font-size: 16px;
-            font-weight: 400;
-            line-height: 150%; /* 24px */
-            color: $grayThin;
-          }
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 137.5% */
+            color: #ccc;
 
-          .swiper-navigation {
-            .swiper-pagination {
-              margin-top: 32px;
+            .swiper-pagination-current {
               font-family: Raleway;
-              font-size: 16px;
+              font-size: 48px;
               font-style: normal;
               font-weight: 700;
-              line-height: 22px; /* 137.5% */
-              color: #ccc;
+              line-height: 63.984px; /* 133.3% */
+              color: $grayStrong;
+            }
+          }
+          .swiper-buttons {
+            margin-top: 24px;
+            display: flex;
+            gap: 24px;
 
-              .swiper-pagination-current {
-                font-family: Raleway;
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 63.984px; /* 133.3% */
-                color: $grayStrong;
+            .swiper-button-prev {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 54px;
+              height: 54px;
+              font-size: 24px;
+              border-radius: 10px;
+              background: #ffc87a;
+              color: $bg-main;
+              transition: all 0.5s ease;
+              &:hover {
+                transition: all 0.5s ease;
+                background-color: $mainColor;
               }
             }
-            .swiper-buttons {
-              margin-top: 24px;
+            .swiper-button-next {
               display: flex;
-              gap: 24px;
-
-              .swiper-button-prev {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 54px;
-                height: 54px;
-                font-size: 24px;
-                border-radius: 10px;
-                background: #ffc87a;
-                color: $bg-main;
+              align-items: center;
+              justify-content: center;
+              width: 54px;
+              height: 54px;
+              font-size: 24px;
+              border-radius: 10px;
+              background: #ffc87a;
+              color: $bg-main;
+              transition: all 0.5s ease;
+              &:hover {
                 transition: all 0.5s ease;
-                &:hover {
-                  transition: all 0.5s ease;
-                  background-color: $mainColor;
-                }
-              }
-              .swiper-button-next {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 54px;
-                height: 54px;
-                font-size: 24px;
-                border-radius: 10px;
-                background: #ffc87a;
-                color: $bg-main;
-                transition: all 0.5s ease;
-                &:hover {
-                  transition: all 0.5s ease;
-                  background-color: $mainColor;
-                }
+                background-color: $mainColor;
               }
             }
           }
@@ -443,7 +443,9 @@ body {
   }
 }
 
-.social-swipper {
+// ===================SOCIAL-SWIPER========================================
+
+.social-swiper {
   margin-left: 0;
   margin-right: 0;
   width: 872px;
@@ -452,6 +454,7 @@ body {
   right: 0;
   top: -45px;
   .social-wrapper {
+    position: unset;
     .swiper-slide {
       padding: 150px 24px 32px 24px;
       background-color: $bg-main;

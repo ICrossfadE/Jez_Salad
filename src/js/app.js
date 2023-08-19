@@ -9,7 +9,7 @@ new Swiper(".swiper", {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
 
   //Aroows
@@ -23,11 +23,17 @@ new Swiper(".swiper", {
   },
 
   breakpoints: {
-    1440: {
-      slidesPerView: 3,
+    948: {
+      slidesPerView: 1,
     },
     1024: {
-      slidesPerView: 1,
+      slidesPerView: 2,
+    },
+    1260: {
+      slidesPerView: 2.75,
+    },
+    1440: {
+      slidesPerView: 2,
     },
   },
 });
