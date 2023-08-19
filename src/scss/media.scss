@@ -1,4 +1,25 @@
+@media (max-width: 3840px) {
+  // ===================SOCIAL========================================
+
+  .social-block {
+    .social-block__container {
+      max-width: 1185px;
+      padding: 0 15px;
+      margin: 0 auto;
+      .social-block-wrapper {
+        justify-content: space-between;
+
+        .social-swiper {
+          width: 540px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1440px) {
+  // ===================HEADER========================================
+
   .header__container {
     nav {
       .navbar {
@@ -57,9 +78,29 @@
       }
     }
   }
+
+  // ===================SOCIAL========================================
+
+  .social-block {
+    .social-block__container {
+      max-width: 100%;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      .social-block-wrapper {
+        justify-content: end;
+
+        .social-swiper {
+          width: 780px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
+  // ===================TASKS========================================
+
   .task-block {
     .task-block__container {
       .task-block-title {
@@ -101,9 +142,44 @@
       }
     }
   }
+
+  // ===================SOCIAL========================================
+
+  .social-block {
+    .social-block__container {
+      padding-left: 15px;
+      .social-block-wrapper {
+        .social-description {
+          .social-description-wrapper {
+            padding-right: clamp(0rem, -6.25rem + 15.63vw, 3.75rem);
+          }
+        }
+
+        .social-swiper {
+          height: 452px;
+          width: 800px;
+          .swiper-wrapper {
+            .social-slide {
+              padding: 120px 24px 24px 24px;
+              .social-slide-content {
+                .name {
+                  font-size: 20px;
+                }
+                .description {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  // ===================HEADER========================================
+
   .header__container {
     display: flex;
     flex-direction: column;
@@ -164,6 +240,8 @@
     }
   }
 
+  // ===================TASKS========================================
+
   .task-block {
     .task-block__container {
       .task-block-title {
@@ -214,12 +292,62 @@
       }
     }
   }
+
+  // ===================SOCIAL========================================
+
+  .social-block {
+    .social-block__container {
+      padding-left: 15px;
+      .social-block-wrapper {
+        .social-description {
+          .social-description-wrapper {
+            width: clamp(10.625rem, -7.187rem + 67.06vw, 25rem);
+            .description__title {
+              font-size: 38px;
+            }
+            p {
+              margin-top: 26px;
+              font-size: 14px;
+            }
+            .swiper-navigation {
+              .swiper-pagination {
+                margin-top: 12px;
+                .swiper-pagination-current {
+                  font-size: 38px;
+                }
+              }
+              .swiper-buttons {
+                margin-top: 12px;
+              }
+            }
+          }
+        }
+
+        .social-swiper {
+          height: 452px;
+          .swiper-wrapper {
+            .social-slide {
+              padding: 120px 24px 24px 24px;
+              .name {
+                font-size: 20px;
+              }
+              .description {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
   [class*="__container"] {
     padding: 0 10px;
   }
+
+  // ===================TASKS========================================
 
   .task-block {
     .task-block__container {
@@ -261,6 +389,107 @@
         .task-button {
           margin-top: 24px;
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// ===================SOCIAL========================================
+
+.social-block {
+  .social-block__container {
+    padding-left: 15px;
+    .social-block-wrapper {
+      .social-description {
+        .social-description-wrapper {
+          .description__title {
+            font-size: 28px;
+            line-height: 46.984px;
+          }
+          p {
+            margin-top: 6px;
+          }
+          .swiper-navigation {
+            .swiper-pagination {
+              margin-top: 6px;
+              .swiper-pagination-current {
+                font-size: 38px;
+              }
+            }
+            .swiper-buttons {
+              margin-top: 6px;
+              .swiper-button-prev {
+                width: 44px;
+                height: 44px;
+              }
+              .swiper-button-next {
+                width: 44px;
+                height: 44px;
+              }
+            }
+          }
+        }
+      }
+
+      .social-swiper {
+        top: -40px;
+        height: 464px;
+        .swiper-wrapper {
+          .social-slide {
+            padding: 110px 24px 24px 24px;
+            .social-slide-content {
+              .avatar {
+                top: -40px;
+                height: 80px;
+                width: 80px;
+              }
+              .name {
+                font-size: 18px;
+              }
+              .age {
+                font-size: 12px;
+              }
+              .description {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  // ===================SOCIAL========================================
+  .social-block {
+    .social-block__container {
+      .social-block-wrapper {
+        .social-swiper {
+          top: -40px;
+          height: 500px;
+          .swiper-wrapper {
+            .social-slide {
+              padding: 70px 24px 24px 24px;
+              .social-slide-content {
+                .avatar {
+                  top: -40px;
+                  height: 80px;
+                  width: 80px;
+                }
+                .name {
+                  font-size: 18px;
+                }
+                .age {
+                  font-size: 12px;
+                }
+                .description {
+                  font-size: 11px;
+                }
+              }
+            }
+          }
         }
       }
     }

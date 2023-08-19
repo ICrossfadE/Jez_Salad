@@ -1,5 +1,6 @@
 @import "reset.scss";
 @import "list.scss";
+@import "../../node_modules/swiper/swiper.scss";
 
 [class*="__container"] {
   max-width: 1185px;
@@ -26,6 +27,8 @@ body {
   background-repeat: no-repeat;
   background-position-x: 100%;
 }
+
+// ===================HEADER========================================
 
 .header__container {
   padding-top: 30px;
@@ -244,6 +247,8 @@ body {
   }
 }
 
+// ===================TASKS========================================
+
 .task-block {
   margin: 100px 0;
   .task-block__container {
@@ -338,6 +343,200 @@ body {
       &:hover {
         box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.2);
         transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+// ===================SOCIAL========================================
+
+.social-block {
+  background-color: $bg-orange;
+  overflow-x: hidden;
+
+  .social-block-wrapper {
+    margin: 180px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    gap: clamp(0rem, -2.355rem + 8.87vw, 5.625rem);
+
+    .social-description {
+      display: flex;
+      .social-description-wrapper {
+        width: 400px;
+
+        .description__title {
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 63.984px; /* 133.3% */
+          color: $grayStrong;
+        }
+        p {
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          color: $grayThin;
+        }
+
+        .swiper-navigation {
+          .swiper-pagination {
+            margin-top: 32px;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 137.5% */
+            color: #ccc;
+
+            .swiper-pagination-current {
+              font-family: Raleway;
+              font-size: 48px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 63.984px; /* 133.3% */
+              color: $grayStrong;
+            }
+          }
+          .swiper-buttons {
+            margin-top: 24px;
+            display: flex;
+            gap: 24px;
+
+            .swiper-button-prev {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 54px;
+              height: 54px;
+              font-size: 24px;
+              border-radius: 10px;
+              background: #ffc87a;
+              color: $bg-main;
+              transition: all 0.5s ease;
+              &:hover {
+                transition: all 0.5s ease;
+                background-color: $mainColor;
+              }
+            }
+            .swiper-button-next {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 54px;
+              height: 54px;
+              font-size: 24px;
+              border-radius: 10px;
+              background: #ffc87a;
+              color: $bg-main;
+              transition: all 0.5s ease;
+              &:hover {
+                transition: all 0.5s ease;
+                background-color: $mainColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===================SOCIAL-SWIPER========================================
+
+.social-swiper {
+  margin-left: 0;
+  margin-right: 0;
+  width: 872px;
+  height: 482px;
+  padding-top: 45px;
+  right: 0;
+  top: -45px;
+  .social-wrapper {
+    position: unset;
+    .swiper-slide {
+      padding: 150px 24px 32px 24px;
+      background-color: $bg-main;
+      border-radius: 8px;
+      &:nth-child(1) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-1.jpg");
+          }
+        }
+      }
+      &:nth-child(2) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-2.jpg");
+          }
+        }
+      }
+      &:nth-child(3) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-3.jpg");
+          }
+        }
+      }
+      &:nth-child(4) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-4.jpg");
+          }
+        }
+      }
+      &:nth-child(5) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-5.jpg");
+          }
+        }
+      }
+      &:nth-child(6) {
+        .social-slide-content {
+          .avatar {
+            background-image: url("@img/avatars/avatar-6.jpg");
+          }
+        }
+      }
+
+      .social-slide-content {
+        .avatar {
+          position: absolute;
+          top: -45px;
+          max-width: 90px;
+          max-height: 90px;
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .name {
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 31.992px; /* 133.3% */
+          color: $fontBlack;
+        }
+        .age {
+          margin: 8px 0 18px 0;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 150%; /* 21px */
+          color: $grayLite;
+        }
+        .description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          letter-spacing: -0.32px;
+          color: $grayThin;
+        }
       }
     }
   }
