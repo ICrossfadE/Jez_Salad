@@ -250,7 +250,7 @@ body {
 // ===================TASKS========================================
 
 .task-block {
-  margin: 100px 0;
+  margin: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem) 0;
   .task-block__container {
     .task-block-title {
       display: flex;
@@ -288,7 +288,10 @@ body {
       transition: all 0.2s ease;
 
       .item-logo {
-        height: 120px;
+        img {
+          width: clamp(6.25rem, 4.821rem + 2.98vw, 7.5rem);
+          height: clamp(6.25rem, 4.821rem + 2.98vw, 7.5rem);
+        }
       }
 
       .item-title {
@@ -542,7 +545,7 @@ body {
 // ===================DISCOUT_MENU========================================
 
 .discount-menu {
-  margin: 100px 0;
+  margin: clamp(1.563rem, -0.4rem + 7.39vw, 6.25rem) 0;
   .discount-menu-title {
     display: flex;
     align-items: center;
@@ -567,8 +570,8 @@ body {
   .discount-menu-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
-    gap: 40px;
+    margin-top: clamp(2.5rem, 1.715rem + 2.96vw, 4.375rem);
+    gap: clamp(1.25rem, -0.179rem + 2.98vw, 2.5rem);
 
     .list-item {
       display: flex;
@@ -589,7 +592,7 @@ body {
       &:nth-child(2) {
         background: url("@img/discount-menu/484b3a19dff7d4f23978440464c89016.jpg");
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: cover;
         background-position: center;
       }
       &:nth-child(3) {

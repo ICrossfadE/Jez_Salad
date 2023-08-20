@@ -462,7 +462,7 @@ body {
 }
 
 .task-block {
-  margin: 100px 0;
+  margin: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem) 0;
 }
 .task-block .task-block__container .task-block-title {
   display: flex;
@@ -495,8 +495,9 @@ body {
   background: #ffffff;
   transition: all 0.2s ease;
 }
-.task-block .task-block__container .task-list-item .item-logo {
-  height: 120px;
+.task-block .task-block__container .task-list-item .item-logo img {
+  width: clamp(6.25rem, 4.821rem + 2.98vw, 7.5rem);
+  height: clamp(6.25rem, 4.821rem + 2.98vw, 7.5rem);
 }
 .task-block .task-block__container .task-list-item .item-title {
   margin-top: 70px;
@@ -699,7 +700,7 @@ body {
 }
 
 .discount-menu {
-  margin: 100px 0;
+  margin: clamp(1.563rem, -0.4rem + 7.39vw, 6.25rem) 0;
 }
 .discount-menu .discount-menu-title {
   display: flex;
@@ -724,8 +725,8 @@ body {
 .discount-menu .discount-menu-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
-  gap: 40px;
+  margin-top: clamp(2.5rem, 1.715rem + 2.96vw, 4.375rem);
+  gap: clamp(1.25rem, -0.179rem + 2.98vw, 2.5rem);
 }
 .discount-menu .discount-menu-list .list-item {
   display: flex;
@@ -745,7 +746,7 @@ body {
 .discount-menu .discount-menu-list .list-item:nth-child(2) {
   background: url("../img/discount-menu/484b3a19dff7d4f23978440464c89016.jpg");
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: cover;
   background-position: center;
 }
 .discount-menu .discount-menu-list .list-item:nth-child(3) {
@@ -971,6 +972,9 @@ body {
   .social-block .social-block__container {
     padding-left: 15px;
   }
+  .social-block .social-block__container .social-block-wrapper {
+    margin: 100px 0 60px 0;
+  }
   .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper {
     width: clamp(10.625rem, -7.187rem + 67.06vw, 25rem);
   }
@@ -1035,6 +1039,7 @@ body {
     width: 263px;
   }
   .task-block .task-block__container .task-list-item .item-title {
+    margin-top: 30px;
     font-size: 20px;
   }
   .task-block .task-block__container .task-list-item p {
@@ -1044,52 +1049,54 @@ body {
     margin-top: 24px;
     font-size: 14px;
   }
+  .social-block .social-block__container {
+    padding-left: 15px;
+  }
+  .social-block .social-block__container .social-block-wrapper {
+    margin: 100px 0 60px 0;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper p {
+    margin-top: 6px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination {
+    margin-top: 6px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination .swiper-pagination-current {
+    font-size: 38px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons {
+    margin-top: 6px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-next {
+    width: 44px;
+    height: 44px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper {
+    top: -40px;
+    height: 464px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide {
+    padding: 110px 24px 24px 24px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .avatar {
+    top: -40px;
+    height: 80px;
+    width: 80px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .name {
+    font-size: 18px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .age {
+    font-size: 12px;
+  }
+  .social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .description {
+    font-size: 12px;
+  }
 }
-.social-block .social-block__container {
-  padding-left: 15px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper p {
-  margin-top: 6px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination {
-  margin-top: 6px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-pagination .swiper-pagination-current {
-  font-size: 38px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons {
-  margin-top: 6px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-prev {
-  width: 44px;
-  height: 44px;
-}
-.social-block .social-block__container .social-block-wrapper .social-description .social-description-wrapper .swiper-navigation .swiper-buttons .swiper-button-next {
-  width: 44px;
-  height: 44px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper {
-  top: -40px;
-  height: 464px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide {
-  padding: 110px 24px 24px 24px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .avatar {
-  top: -40px;
-  height: 80px;
-  width: 80px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .name {
-  font-size: 18px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .age {
-  font-size: 12px;
-}
-.social-block .social-block__container .social-block-wrapper .social-swiper .swiper-wrapper .social-slide .social-slide-content .description {
-  font-size: 12px;
-}
-
 @media (max-width: 375px) {
   .social-block .social-block__container .social-block-wrapper .social-swiper {
     top: -40px;

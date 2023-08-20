@@ -299,6 +299,7 @@
     .social-block__container {
       padding-left: 15px;
       .social-block-wrapper {
+        margin: 100px 0 60px 0;
         .social-description {
           .social-description-wrapper {
             width: clamp(10.625rem, -7.187rem + 67.06vw, 25rem);
@@ -388,6 +389,7 @@
         width: 263px;
 
         .item-title {
+          margin-top: 30px;
           font-size: 20px;
         }
 
@@ -402,61 +404,62 @@
       }
     }
   }
-}
 
-// ===================SOCIAL========================================
-
-.social-block {
-  .social-block__container {
-    padding-left: 15px;
-    .social-block-wrapper {
-      .social-description {
-        .social-description-wrapper {
-          p {
-            margin-top: 6px;
-          }
-          .swiper-navigation {
-            .swiper-pagination {
+  .social-block {
+    .social-block__container {
+      padding-left: 15px;
+      .social-block-wrapper {
+        margin: 100px 0 60px 0;
+        .social-description {
+          .social-description-wrapper {
+            p {
               margin-top: 6px;
-              .swiper-pagination-current {
-                font-size: 38px;
-              }
             }
-            .swiper-buttons {
-              margin-top: 6px;
-              .swiper-button-prev {
-                width: 44px;
-                height: 44px;
+            .swiper-navigation {
+              .swiper-pagination {
+                margin-top: 6px;
+                .swiper-pagination-current {
+                  font-size: 38px;
+                }
               }
-              .swiper-button-next {
-                width: 44px;
-                height: 44px;
+              .swiper-buttons {
+                margin-top: 6px;
+                .swiper-button-prev {
+                  width: 44px;
+                  height: 44px;
+                }
+                .swiper-button-next {
+                  width: 44px;
+                  height: 44px;
+                }
               }
             }
           }
         }
-      }
 
-      .social-swiper {
-        top: -40px;
-        height: 464px;
-        .swiper-wrapper {
-          .social-slide {
-            padding: 110px 24px 24px 24px;
-            .social-slide-content {
-              .avatar {
-                top: -40px;
-                height: 80px;
-                width: 80px;
-              }
-              .name {
-                font-size: 18px;
-              }
-              .age {
-                font-size: 12px;
-              }
-              .description {
-                font-size: 12px;
+        // ===================SOCIAL========================================
+
+        .social-swiper {
+          top: -40px;
+          height: 464px;
+          .swiper-wrapper {
+            .social-slide {
+              padding: 110px 24px 24px 24px;
+              .social-slide-content {
+                .avatar {
+                  top: -40px;
+                  height: 80px;
+                  width: 80px;
+                }
+                .name {
+                  font-size: 18px;
+                }
+                .age {
+                  font-size: 12px;
+                }
+                .description {
+                  font-size: 12px;
+                }
               }
             }
           }
