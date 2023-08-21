@@ -617,4 +617,100 @@ body {
     }
   }
 }
+
+// ===================FORM-SUBSCRIBE========================================
+
+.form-subscribe {
+  .form-subscribe__container {
+    .form-subscribe-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 48px 0 96px 0;
+      border-radius: 50px;
+      background-color: $bg-orange;
+      background-image: url("@img/backround/Group 8441.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      gap: clamp(2.5rem, 1.786rem + 3.57vw, 5rem);
+
+      .form-subscribe-title {
+        width: calc(655px / 1170px * 100%);
+        text-align: center;
+
+        .form-subscribe-subtitle {
+          font-family: Poppins;
+          font-size: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem);
+          font-weight: 500;
+          line-height: 180%; /* 36px */
+          letter-spacing: -0.4px;
+          color: $mainColor;
+        }
+        .form-subscribe__title {
+          font-size: clamp(1.563rem, 0.961rem + 2.27vw, 3rem);
+          padding-bottom: 24px;
+        }
+
+        p {
+          font-family: Poppins;
+          font-size: clamp(0.75rem, 0.541rem + 0.79vw, 1.25rem);
+          font-weight: 500;
+          line-height: 160%; /* 25.6px */
+          letter-spacing: -0.32px;
+          color: $grayThin;
+        }
+      }
+
+      .form {
+        position: relative;
+        .form-input {
+          padding: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem) 116px
+            clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem)
+            clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+          width: clamp(17.5rem, 10.571rem + 34.64vw, 41.75rem);
+          border-radius: 100px;
+
+          color: $grayThin;
+          font-family: Poppins;
+          font-size: clamp(0.75rem, 0.643rem + 0.54vw, 1.125rem);
+          font-weight: 400;
+          line-height: 140%; /* 25.2px */
+          letter-spacing: -0.36px;
+          outline: none;
+          opacity: 0.7;
+        }
+        .form-button {
+          position: absolute;
+          right: clamp(0.375rem, 0.304rem + 0.36vw, 0.625rem);
+          top: clamp(0.375rem, 0.304rem + 0.36vw, 0.625rem);
+          display: flex;
+          width: clamp(6.25rem, 5rem + 6.25vw, 10.625rem);
+          height: clamp(2.813rem, 2.473rem + 1.7vw, 4rem);
+          padding: 10px 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100px;
+
+          color: $bg-main;
+          font-family: Poppins;
+          font-size: clamp(0.75rem, 0.643rem + 0.54vw, 1.125rem);
+          font-weight: 500;
+          line-height: 140%; /* 25.2px */
+          letter-spacing: -0.36px;
+          background-color: $mainColor;
+          transition: all 0.5s ease;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $maincolor-hover;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+}
 @import "media.scss";
