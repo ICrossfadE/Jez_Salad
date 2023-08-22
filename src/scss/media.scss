@@ -350,6 +350,28 @@
       align-items: center;
     }
   }
+
+  // ===================FOOTER========================================
+
+  .footer {
+    .footer__container {
+      .footer-wrapper {
+        .footer-descrition {
+          margin-bottom: 50px;
+        }
+
+        .footer-navigation {
+        }
+
+        .footer-contacts {
+          margin-bottom: 50px;
+        }
+
+        .footer-social {
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
