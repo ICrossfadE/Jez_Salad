@@ -722,8 +722,10 @@ body {
     .footer-wrapper {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 50px 0;
       .footer-descrition {
-        width: calc(212px / 1170px * 100%);
+        width: clamp(9.375rem, 6.607rem + 13.84vw, 13.25rem);
         .logo {
           white-space: nowrap;
           font-family: Roboto;
@@ -739,7 +741,7 @@ body {
         .description {
           margin: 20px 0 68px 0;
           font-family: Poppins;
-          font-size: 16px;
+          font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
           font-weight: 400;
           line-height: 160%; /* 25.6px */
           color: $grayThin;
@@ -756,9 +758,10 @@ body {
 
       .footer-navigation {
         display: flex;
+        // flex-grow: 1;
         flex-direction: column;
         gap: 25px;
-        width: calc(71px / 1170px * 100%);
+        width: 72px;
 
         span {
           font-variant-numeric: lining-nums proportional-nums;
@@ -776,6 +779,11 @@ body {
           white-space: nowrap;
 
           li {
+            font-family: Poppins;
+            font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            color: $grayThin;
             cursor: pointer;
             transition: all 0.5s ease;
 
@@ -789,9 +797,10 @@ body {
 
       .footer-contacts {
         display: flex;
+
         flex-direction: column;
         gap: 23px;
-        width: calc(237px / 1170px * 100%);
+        width: clamp(10.75rem, 7.804rem + 14.73vw, 14.875rem);
 
         span {
           font-variant-numeric: lining-nums proportional-nums;
@@ -808,6 +817,13 @@ body {
           gap: 23px;
 
           li {
+            font-family: Poppins;
+            font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            color: $grayThin;
+            cursor: pointer;
+            transition: all 0.5s ease;
             position: relative;
             padding-left: 40px;
 
@@ -860,11 +876,11 @@ body {
       }
 
       .footer-social {
-        width: calc(192px / 1170px * 100%);
+        width: 192px;
 
         .social {
           display: flex;
-          gap: clamp(0.25rem, -0.25rem + 2.5vw, 2rem);
+          gap: 32px;
 
           .twitter {
             display: block;
@@ -900,7 +916,7 @@ body {
         p {
           margin-top: 20px;
           font-family: Poppins;
-          font-size: clamp(0.75rem, 0.541rem + 0.79vw, 1.25rem);
+          font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
           font-weight: 400;
           line-height: 150%; /* 24px */
           color: $grayMedium;
