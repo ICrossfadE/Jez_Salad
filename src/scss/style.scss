@@ -613,7 +613,7 @@ body {
 // ===================FORM-SUBSCRIBE========================================
 
 .form-subscribe {
-  margin: 200px 0 100px 0;
+  margin: clamp(6.25rem, 4.464rem + 8.93vw, 12.5rem) 0 100px 0;
   .form-subscribe__container {
     .form-subscribe-wrapper {
       display: flex;
@@ -750,7 +750,6 @@ body {
 
       .footer-navigation {
         display: flex;
-        // flex-grow: 1;
         flex-direction: column;
         gap: 25px;
         width: 72px;
