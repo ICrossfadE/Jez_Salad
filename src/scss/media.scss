@@ -80,6 +80,15 @@
   }
 
   // ===================SOCIAL========================================
+  .social-block {
+    .social-block__container {
+      .social-block-wrapper {
+        .social-description {
+          margin-right: clamp(0.313rem, -1.42rem + 8.66vw, 6.375rem);
+        }
+      }
+    }
+  }
 
   .social-block {
     .social-block__container {
@@ -92,6 +101,7 @@
 
         .social-swiper {
           width: 780px;
+          margin-left: clamp(0.313rem, -1.42rem + 8.66vw, 6.375rem);
         }
       }
     }
